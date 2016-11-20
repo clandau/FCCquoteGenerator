@@ -1,0 +1,28 @@
+body {
+    background-image: url("stars.jpg");
+    background-size: 80%;
+    background-repeat: repeat;
+    font-family: 'Droid Serif', serif;
+    color: #A8A8A8; 
+}
+
+.container {
+    position: relative;
+    margin: 10% auto auto auto;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.bg-1 {
+    color: #A8A8A8; 
+    border-radius: 25px; 
+    width: 600px;
+}
+
+.btn-outline-primary {
+    opacity: 0.5;
+    background-color: black;
+    color: #A8A8A8;
+    margin-top: 5%;
+}
+
