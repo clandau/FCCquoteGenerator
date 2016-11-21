@@ -36,7 +36,7 @@ ourRequest.send();
 });
 
 function renderHTML(data) {
-    twitterURL += data.quote + "+" + data.author;
+    twitterURL += '"' + data.quote + '"' + "+" + data.author;
     tweetHTML.setAttribute('href', twitterURL);
     document.getElementById("quote").innerText = data.quote;
     document.getElementById("author").innerText = data.author;
