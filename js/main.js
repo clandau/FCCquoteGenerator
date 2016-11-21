@@ -38,7 +38,7 @@ ourRequest.send();
 
 /* get quote string from JSON and populate the tweet variable with current quote */
 function renderHTML(data) {
-    twitterURL += '"' + data.quote + '"' + "+" + data.author;
+    twitterURL += '"' + encodeURIComponent(data.quote) + '"' + "+" + data.author;
     tweetHTML.setAttribute('href', twitterURL);
     document.getElementById("quote").innerText = data.quote;
     document.getElementById("author").innerText = data.author;
