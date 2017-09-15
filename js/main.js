@@ -16,7 +16,6 @@ ourRequest.onload = function() {
 ourRequest.send();
 /* on new quote button press get a quote from API */ 
 newQuote.addEventListener("click", function(){
-    twitterURL = "https://twitter.com/intent/tweet?text=";
     ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'https://random-quote-generator.herokuapp.com/api/quotes/random');   
     ourRequest.onload = function() {
