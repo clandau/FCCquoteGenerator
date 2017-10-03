@@ -1,4 +1,4 @@
-var twitterURL = "https://twitter.com/intent/tweet?text=";
+var twitterURL;
 var tweetHTML = document.getElementById('tweet');
 
 /* on page load get a quote from API */ 
@@ -16,6 +16,7 @@ ourRequest.onload = function() {
 ourRequest.send();
 /* on new quote button press get a quote from API */ 
 newQuote.addEventListener("click", function(){
+    twitterURL = "https://twitter.com/intent/tweet?text="; //reset to original twitter url
     ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'https://random-quote-generator.herokuapp.com/api/quotes/random');   
     ourRequest.onload = function() {
